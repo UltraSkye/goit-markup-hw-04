@@ -1,5 +1,4 @@
 @import '_variables';
-@import '_reset';
 
 body {
   font-family: $font-family-base;
@@ -9,13 +8,13 @@ body {
   color: $slate;
   background-color: $white;
 }
-.container {
-  max-width: 1128px;
-  margin: 0 auto;
-}
 
 section {
   padding: 120px 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 h1 {
@@ -36,89 +35,42 @@ h3 {
   color: $navy-blue;
 }
 
-.main__hero, .footer {
-  background-color: $navy-blue;
-}
-
 .header {
   padding: 24px 0;
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
   &__nav {
     display: flex;
     gap: 76px;
   }
-  .nav {
-    &__menu {
-      display: inline-flex;
-      gap: 40px;
-    }
-    &__logo {
-      font-family: "Raleway", sans-serif;
-      color: $iris;
-      font-weight: $font-weight-bold;
-      font-size: 18px;
-      line-height: 21px;
-      letter-spacing: 0.03em;
-      span {
-        color: $navy-blue;
-      }
-    }
+  .nav__menu {
+    display: flex;
+    gap: 40px;
   }
-  &__contacts {
-    .contacts__list {
-      display: inline-flex;
-      gap: 40px;
-      font-style: normal;
+  .nav__logo {
+    font-family: "Raleway", sans-serif;
+    color: $iris;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    span {
+      color: $navy-blue;
     }
   }
 }
 
-.menu {
-  &__item {
-    font-size: 16px;
-    font-weight: $font-weight-medium;
-    color: $navy-blue;
+.menu__link {
+  &:hover {
+    color: $ocean;
   }
-  &__link {
-    position: relative;
-    &:hover {
-      color: $ocean;
-    }
-    &.active {
-      color: $ocean;
-      &::after {
-        position: absolute;
-        content: "";
-        background-color: $ocean;
-        border-radius: 2px;
-        height: 4px;
-        width: 100%;
-        bottom: -27px;
-        left: 0;
-      }
-    }
-  }
-}
-
-.contacts {
-  &__link {
-    &:hover {
-      color: $ocean;
-    }
+  &.active {
+    color: $ocean;
   }
 }
 
 .hero {
-  .container {
-    text-align: center;
-  }
+  text-align: center;
   &__title {
     color: $white;
-    width: 496px;
-    margin: 0 auto;
   }
   &__button {
     padding: 16px 32px;
@@ -127,86 +79,26 @@ h3 {
     border-radius: 4px;
     font-weight: $font-weight-medium;
     letter-spacing: 0.04em;
-    margin-top: 48px;
     &:hover {
       background-color: $ocean;
     }
   }
 }
 
-.features {
-  &__list {
-    display: flex;
-    gap: 24px;
-  }
-  &__item {
-    width: 264px;
-  }
-  &__text {
-    margin-top: 8px;
-  }
+.features__list {
+  display: flex;
+  gap: 24px;
 }
 
 .team {
   background-color: $cloud;
   text-align: center;
-  &__title {
-    margin-bottom: 72px;
-  }
-  &__list {
-    display: flex;
-    gap: 24px;
-  }
-  &__item {
-    width: 264px;
-    background-color: $white;
-  }
-  &__image {
-    margin-bottom: 32px;
-  }
-  &__name {
-    margin-bottom: 8px;
-  }
-  &__role {
-    margin-bottom: 32px;
-  }
-
 }
 
-.portfolio {
-  text-align: center;
-
-  &__title {
-    margin-bottom: 72px;
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-
-  &__item {
-    background-color: $white;
-    text-align: left;
-  }
-
-  &__image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  &__content {
-    border: 1px solid $cornflower;
-    border-top: 0;
-    padding: 32px 16px;
-  }
-
-  &__name {
-    margin-bottom: 8px;
-  }
-
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .footer {
@@ -222,9 +114,5 @@ h3 {
     span {
       color: $cloud;
     }
-  }
-  &__text {
-    margin-top: 16px;
-    width: 264px;
   }
 }
