@@ -19,7 +19,7 @@ li {
 
 h1 {
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.17;
   font-weight: bold;
 }
 
@@ -50,8 +50,9 @@ h3 {
     color: $iris;
     font-weight: $font-weight-bold;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     span {
       color: $navy-blue;
     }
@@ -59,6 +60,10 @@ h3 {
 }
 
 .menu__link {
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+  color: $navy-blue;
+  letter-spacing: 0.02em;
   &:hover {
     color: $ocean;
   }
@@ -67,19 +72,41 @@ h3 {
   }
 }
 
+.contacts {
+  &__link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: $slate;
+    &:hover {
+      color: $ocean;
+    }
+    &:focus {
+      color: $ocean;
+    }
+  }
+}
+
 .hero {
   text-align: center;
   &__title {
     color: $white;
+    text-align: center;
+    line-height: 1.07;
   }
   &__button {
     padding: 16px 32px;
     background-color: $iris;
     color: $white;
     border-radius: 4px;
-    font-weight: $font-weight-medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     &:hover {
+      background-color: $ocean;
+    }
+    &:focus {
       background-color: $ocean;
     }
   }
@@ -90,15 +117,32 @@ h3 {
   gap: 24px;
 }
 
+.features__item {
+  width: 264px;
+}
+
 .team {
   background-color: $cloud;
   text-align: center;
+  &__title {
+    margin-bottom: 72px;
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+  &__item {
+    background-color: $white;
+    padding: 16px;
+  }
 }
 
-.portfolio__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.portfolio {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
 }
 
 .footer {
@@ -108,7 +152,7 @@ h3 {
     font-family: "Raleway", sans-serif;
     font-weight: $font-weight-bold;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $iris;
     span {

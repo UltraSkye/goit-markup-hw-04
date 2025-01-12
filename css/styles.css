@@ -17,7 +17,7 @@ li {
 
 h1 {
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.17;
   font-weight: bold;
 }
 
@@ -53,17 +53,37 @@ h3 {
   color: #4D5AE5;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .header .nav__logo span {
   color: #2E2F42;
 }
 
+.menu__link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2E2F42;
+  letter-spacing: 0.02em;
+}
 .menu__link:hover {
   color: #404BBF;
 }
 .menu__link.active {
+  color: #404BBF;
+}
+
+.contacts__link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.contacts__link:hover {
+  color: #404BBF;
+}
+.contacts__link:focus {
   color: #404BBF;
 }
 
@@ -72,6 +92,8 @@ h3 {
 }
 .hero__title {
   color: #FFFFFF;
+  text-align: center;
+  line-height: 1.07;
 }
 .hero__button {
   padding: 16px 32px;
@@ -79,9 +101,14 @@ h3 {
   color: #FFFFFF;
   border-radius: 4px;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 .hero__button:hover {
+  background-color: #404BBF;
+}
+.hero__button:focus {
   background-color: #404BBF;
 }
 
@@ -92,9 +119,26 @@ h3 {
   gap: 24px;
 }
 
+.features__item {
+  width: 264px;
+}
+
 .team {
   background-color: #F4F4FD;
   text-align: center;
+}
+.team__title {
+  margin-bottom: 72px;
+}
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.team__item {
+  background-color: #FFFFFF;
+  padding: 16px;
 }
 
 .portfolio__list {
@@ -111,7 +155,7 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4D5AE5;
 }
