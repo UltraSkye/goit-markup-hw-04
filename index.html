@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css?v=downgrade1.0" />
+    <link rel="stylesheet" href="./css/styles.css?v=downgrade1.2" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,11 +14,11 @@
   <body>
     <header class="header">
       <nav class="header__nav nav">
-        <a href="./index.html" class="nav__logo">Web<span>Studio</span></a>
+        <a href="./index.html" class="nav__logo">Web<span class="nav__logo-highlight">Studio</span></a>
         <ul class="nav__menu menu">
-          <li class="menu__item"><a href="#" class="menu__link active">Studio</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+          <li class="menu__item"><a href="./index.html" class="menu__link active">Studio</a></li>
+          <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
+          <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
         </ul>
       </nav>
       <address class="header__contacts contacts">
@@ -39,7 +39,7 @@
         <button type="button" class="hero__button">Order Service</button>
       </section>
 
-      <section class="main__features features">
+      <section id="portfolio" class="main__features features">
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__subtitle">Strategy</h3>
@@ -72,7 +72,7 @@
         </ul>
       </section>
 
-      <section class="main__team team">
+      <section id="team" class="main__team team">
         <h2 class="team__title">Our Team</h2>
         <ul class="team__list">
           <li class="team__item">
@@ -80,8 +80,6 @@
               src="./images/team1.jpg"
               alt="Mark Guerrero, Product Designer"
               class="team__image"
-              width="264"
-              height="260"
             />
             <h3 class="team__name">Mark Guerrero</h3>
             <p class="team__role">Product Designer</p>
@@ -91,8 +89,6 @@
               src="./images/team2.jpg"
               alt="Tom Ford, Frontend Developer"
               class="team__image"
-              width="264"
-              height="260"
             />
             <h3 class="team__name">Tom Ford</h3>
             <p class="team__role">Frontend Developer</p>
@@ -102,8 +98,6 @@
               src="./images/team3.jpg"
               alt="Camila Garcia, Marketing"
               class="team__image"
-              width="264"
-              height="260"
             />
             <h3 class="team__name">Camila Garcia</h3>
             <p class="team__role">Marketing</p>
@@ -113,8 +107,6 @@
               src="./images/team4.jpg"
               alt="Daniel Wilson, UI Designer"
               class="team__image"
-              width="264"
-              height="260"
             />
             <h3 class="team__name">Daniel Wilson</h3>
             <p class="team__role">UI Designer</p>
@@ -122,48 +114,30 @@
         </ul>
       </section>
 
-      <section class="portfolio">
+      <section id="portfolio-items" class="portfolio">
         <h2 class="portfolio__title">Our Portfolio</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <img src="./images/portfolio1.jpg" alt="Banking App" class="portfolio__image">
+            <img
+              src="./images/portfolio1.jpg"
+              alt="Banking App"
+              class="portfolio__image"
+              width="360"
+            />
             <div class="portfolio__content">
               <h3 class="portfolio__name">Banking App</h3>
               <p class="portfolio__category">App</p>
             </div>
           </li>
           <li class="portfolio__item">
-            <img src="./images/portfolio2.jpg" alt="Cashless Payment" class="portfolio__image">
+            <img
+              src="./images/portfolio2.jpg"
+              alt="Cashless Payment"
+              class="portfolio__image"
+              width="360"
+            />
             <div class="portfolio__content">
               <h3 class="portfolio__name">Cashless Payment</h3>
-              <p class="portfolio__category">Marketing</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <img src="./images/portfolio3.jpg" alt="Meditation App" class="portfolio__image">
-            <div class="portfolio__content">
-              <h3 class="portfolio__name">Meditation App</h3>
-              <p class="portfolio__category">App</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <img src="./images/portfolio4.jpg" alt="Taxi Service" class="portfolio__image">
-            <div class="portfolio__content">
-              <h3 class="portfolio__name">Taxi Service</h3>
-              <p class="portfolio__category">Marketing</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <img src="./images/portfolio5.jpg" alt="Screen Illustrations" class="portfolio__image">
-            <div class="portfolio__content">
-              <h3 class="portfolio__name">Screen Illustrations</h3>
-              <p class="portfolio__category">Design</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <img src="./images/portfolio6.jpg" alt="Online Courses" class="portfolio__image">
-            <div class="portfolio__content">
-              <h3 class="portfolio__name">Online Courses</h3>
               <p class="portfolio__category">Marketing</p>
             </div>
           </li>
@@ -171,7 +145,7 @@
       </section>
     </main>
 
-    <footer class="footer nav">
+    <footer class="footer">
       <a href="./index.html" class="footer__logo">Web<span>Studio</span></a>
       <p class="footer__text">
         Increase the flow of customers and sales for your business with digital

@@ -10,7 +10,6 @@ body {
 }
 
 section {
-  padding: 120px 0;
 }
 
 li {
@@ -21,6 +20,8 @@ h1 {
   font-size: 56px;
   line-height: 1.17;
   font-weight: bold;
+  letter-spacing: 0.03em;
+  color: $navy-blue;
 }
 
 h2 {
@@ -36,23 +37,21 @@ h3 {
 }
 
 .header {
-  padding: 24px 0;
   &__nav {
-    display: flex;
-    gap: 76px;
   }
+
   .nav__menu {
-    display: flex;
-    gap: 40px;
   }
+
   .nav__logo {
     font-family: "Raleway", sans-serif;
-    color: $iris;
-    font-weight: $font-weight-bold;
     font-size: 18px;
+    font-weight: $font-weight-bold;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    color: $iris;
     text-transform: uppercase;
+
     span {
       color: $navy-blue;
     }
@@ -64,9 +63,11 @@ h3 {
   font-weight: $font-weight-medium;
   color: $navy-blue;
   letter-spacing: 0.02em;
+
   &:hover {
     color: $ocean;
   }
+
   &.active {
     color: $ocean;
   }
@@ -78,9 +79,11 @@ h3 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: $slate;
+
     &:hover {
       color: $ocean;
     }
+
     &:focus {
       color: $ocean;
     }
@@ -89,23 +92,23 @@ h3 {
 
 .hero {
   text-align: center;
+
   &__title {
-    color: $white;
-    text-align: center;
+    font-size: 56px;
     line-height: 1.07;
+    color: $white;
+    letter-spacing: 0.02em;
   }
+
   &__button {
-    padding: 16px 32px;
     background-color: $iris;
     color: $white;
-    border-radius: 4px;
-    font-weight: 500;
     font-size: 16px;
+    font-weight: $font-weight-medium;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    &:hover {
-      background-color: $ocean;
-    }
+
+    &:hover,
     &:focus {
       background-color: $ocean;
     }
@@ -113,50 +116,81 @@ h3 {
 }
 
 .features__list {
-  display: flex;
-  gap: 24px;
-}
-
-.features__item {
-  width: 264px;
 }
 
 .team {
   background-color: $cloud;
   text-align: center;
+
   &__title {
-    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: $navy-blue;
   }
+
   &__list {
-    display: flex;
-    gap: 24px;
   }
+
   &__item {
     background-color: $white;
-    padding: 16px;
+  }
+
+  &__image {
   }
 }
 
 .portfolio {
   &__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  }
+
+  &__item {
+    background-color: $white;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    border: 1px solid $cornflower;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 1.2;
+    color: $navy-blue;
+    font-weight: $font-weight-bold;
+  }
+
+  &__category {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $slate;
   }
 }
 
 .footer {
-  padding: 100px 0;
   color: $cloud;
+
   &__logo {
     font-family: "Raleway", sans-serif;
-    font-weight: $font-weight-bold;
     font-size: 18px;
+    font-weight: $font-weight-bold;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: $iris;
+
     span {
       color: $cloud;
     }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $light-slate;
   }
 }
