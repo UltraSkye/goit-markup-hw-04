@@ -1,0 +1,191 @@
+@import '_variables';
+@import '_reset';
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: $slate;
+}
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 120px 0;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: $navy-blue;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+  color: $navy-blue;
+}
+
+.main__hero, .footer {
+  background-color: $navy-blue;
+}
+
+.header {
+  padding: 24px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    gap: 76px;
+  }
+  .nav {
+    &__menu {
+      display: inline-flex;
+      gap: 40px;
+    }
+    &__logo {
+      font-family: "Raleway", sans-serif;
+      color: $navy-blue;
+      font-weight: $font-weight-bold;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.03em;
+      span {
+        color: $iris;
+      }
+    }
+  }
+  &__contacts {
+    .contacts__list {
+      display: inline-flex;
+      gap: 40px;
+      font-style: normal;
+    }
+  }
+}
+
+.menu {
+  &__item {
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    color: $navy-blue;
+  }
+  &__link {
+    position: relative;
+    &:hover {
+      color: $ocean;
+    }
+    &.active {
+      color: $ocean;
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $ocean;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        bottom: -27px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.contacts {
+  &__link {
+    &:hover {
+      color: $ocean;
+    }
+  }
+}
+
+.hero {
+  .container {
+    text-align: center;
+  }
+  &__title {
+    color: $white;
+    width: 496px;
+    margin: 0 auto;
+  }
+  &__button {
+    padding: 16px 32px;
+    background-color: $iris;
+    color: $white;
+    border-radius: 4px;
+    font-weight: $font-weight-medium;
+    letter-spacing: 0.04em;
+    margin-top: 48px;
+    &:hover {
+      background-color: $ocean;
+    }
+  }
+}
+
+.features {
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+  &__item {
+    width: 264px;
+  }
+  &__text {
+    margin-top: 8px;
+  }
+}
+
+.team {
+  background-color: $cloud;
+  text-align: center;
+  &__title {
+    margin-bottom: 72px;
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+  &__item {
+    width: 264px;
+    background-color: $white;
+  }
+  &__image {
+    margin-bottom: 32px;
+  }
+  &__name {
+    margin-bottom: 8px;
+  }
+  &__role {
+    margin-bottom: 32px;
+  }
+}
+
+.footer {
+  padding: 100px 0;
+  color: $cloud;
+  &__logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    span {
+      color: $iris;
+    }
+  }
+  &__text {
+    margin-top: 16px;
+    width: 264px;
+  }
+}
