@@ -7,6 +7,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: $slate;
+  background-color: $white;
 }
 .container {
   max-width: 1128px;
@@ -56,13 +57,13 @@ h3 {
     }
     &__logo {
       font-family: "Raleway", sans-serif;
-      color: $navy-blue;
+      color: $iris;
       font-weight: $font-weight-bold;
       font-size: 18px;
       line-height: 21px;
       letter-spacing: 0.03em;
       span {
-        color: $iris;
+        color: $navy-blue;
       }
     }
   }
@@ -169,6 +170,43 @@ h3 {
   &__role {
     margin-bottom: 32px;
   }
+
+}
+
+.portfolio {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 72px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  &__item {
+    background-color: $white;
+    text-align: left;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__content {
+    border: 1px solid $cornflower;
+    border-top: 0;
+    padding: 32px 16px;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+  }
+
 }
 
 .footer {
@@ -180,8 +218,9 @@ h3 {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.03em;
+    color: $iris;
     span {
-      color: $iris;
+      color: $cloud;
     }
   }
   &__text {
